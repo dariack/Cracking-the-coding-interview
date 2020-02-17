@@ -39,3 +39,39 @@ Note:
 If `n` is greater than the size of the list, remove the first node of the list.
 Try doing it using constant additional space.
 
+## Stacks And Queues
+
+* **[Evaluate Expression In Reverse Polish Notation](https://github.com/dariack/Cracking-the-coding-interview/blob/master/EvaluateExpression.py)**
+
+Evaluate the value of an arithmetic expression in Reverse Polish Notation.
+
+Valid operators are `+, -, *, /`. Each operand may be an integer or another expression.
+
+For Example
+
+```
+Input 1:
+    A =   ["2", "1", "+", "3", "*"]
+Output 1:
+    9
+Explaination 1:
+    starting from backside:
+    *: ( )*( )
+    3: ()*(3)
+    +: ( () + () )*(3)
+    1: ( () + (1) )*(3)
+    2: ( (2) + (1) )*(3)
+    ((2)+(1))*(3) = 9
+    
+Input 2:
+    A = ["4", "13", "5", "/", "+"]
+Output 2:
+    6
+Explaination 2:
+    +: ()+()
+    /: ()+(() / ())
+    5: ()+(() / (5))
+    1: ()+((13) / (5))
+    4: (4)+((13) / (5))
+    (4)+((13) / (5)) = 6
+```
